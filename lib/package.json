@@ -1,0 +1,11 @@
+{
+  "name": "lib",
+  "main": "./src/lib.ts",
+  "exports": {
+    ".": {
+      "import": [
+        "./src/lib.ts"
+      ]
+    }
+  }
+}

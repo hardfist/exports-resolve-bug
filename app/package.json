@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "exports": {
+    ".": {
+      "import": [
+        "./dist/lib.js",
+        "./src/lib.ts"
+      ]
+    }
+  },
+  "dependencies": {
+    "@rspack/cli": "^0.4.3",
+    "@rspack/core": "^0.4.3",
+    "lib": "portal:../lib",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "dev": "rspack serve --config rspack.config.js",
+    "build": "rspack build --config rspack.config.js"
+  },
+  "packageManager": "yarn@4.0.2"
+}
